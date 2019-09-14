@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AppBundleSample</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_module1">Trip Details</string>
+    <string name="user_cancelled">Download has been cancelled.</string>
+    <string name="download_module">Download Module</string>
+    <string name="no_modules_downloaded">No Modules are installed yet, Kindly install one first</string>
+    <string name="uninstall_generic_message">Requesting uninstall of all modules.This will happen at some point in the future.</string>
+    <string name="cancel_existing_installation">Cancelling the existing installation</string>
+    <string name="network_error">Network Error</string>
+    <string name="module_already_installed">Module Already Installed</string>
+    <string name="module_downloaded_successfully">Module Successfully Downloaded</string>
+    <string name="uninstall_module">Uninstall All Module</string>
+    <string name="loading">Loading</string>
+
+</resources>

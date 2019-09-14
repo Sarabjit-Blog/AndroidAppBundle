@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cost">Cost</string>
+    <string name="invite_letter">Invite letter</string>
+    <string name="description">Description</string>
+    <string name="name">Name :</string>
+    <string name="trip_details_are">Trip Details are:</string>
+</resources>

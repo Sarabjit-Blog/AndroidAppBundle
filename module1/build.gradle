@@ -1,0 +1,31 @@
+apply plugin: 'com.android.dynamic-feature'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdk
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdk
+        targetSdkVersion rootProject.ext.targetSdk
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    buildToolsVersion = rootProject.ext.buildToolVersion
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':app')
+    implementation "com.android.support.constraint:constraint-layout:$constraintLayout"
+    implementation "com.android.support:design:$design"
+    //download the dynamic module, when required.
+    implementation "com.google.android.play:core:$playcore"
+    testImplementation "junit:junit:$junitTest"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+
+repositories {
+    mavenCentral()
+}

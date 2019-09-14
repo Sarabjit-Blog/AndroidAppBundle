@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:text="@string/trip_details_are"
+              android:layout_marginTop="40dp"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintStart_toEndOf="parent"
+              android:gravity="center"
+              android:id="@+id/tripTitleDescription"
+              android:textSize="20sp"/>
+
+
+    <ImageView android:layout_width="40dp" android:layout_height="40dp"
+               app:layout_constraintStart_toStartOf="parent"
+               android:gravity="center"
+               android:id="@+id/tripImage"
+               app:layout_constraintTop_toBottomOf="@+id/tripTitleDescription"
+               android:layout_marginTop="20dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               android:layout_marginEnd="8dp"/>
+
+    <TextView android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text="@string/name"
+              android:id="@+id/tripName"
+              android:textSize="20sp"
+              app:layout_constraintTop_toBottomOf="@id/tripImage"
+              app:layout_constraintStart_toStartOf="parent"
+              android:gravity="center"
+              android:layout_marginTop="70dp"
+              app:layout_constraintEnd_toStartOf="@+id/guideline1"/>
+
+
+    <TextView android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text="@string/description"
+              android:id="@+id/tripDescription"
+              android:gravity="center"
+              android:textSize="20sp"
+              app:layout_constraintTop_toTopOf="@id/tripName"
+              app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginTop="70dp" app:layout_constraintEnd_toStartOf="@+id/guideline1"
+    />
+
+
+    <TextView android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text="@string/invite_letter"
+              android:id="@+id/inviteLetter"
+              android:textSize="20sp"
+              app:layout_constraintTop_toTopOf="@id/tripDescription"
+              app:layout_constraintStart_toStartOf="parent"
+              android:gravity="center"
+              android:layout_marginTop="70dp"
+              app:layout_constraintEnd_toStartOf="@+id/guideline1"
+    />
+
+    <TextView android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text="@string/cost"
+              android:id="@+id/tripCost"
+              android:gravity="center"
+              android:textSize="20sp"
+              app:layout_constraintTop_toTopOf="@id/inviteLetter"
+              app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginTop="70dp" app:layout_constraintEnd_toStartOf="@+id/guideline1"
+    />
+
+    <android.support.constraint.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent=".5"
+            android:id="@+id/guideline1"/>
+
+
+    <TextView android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              tools:text="London"
+              android:textSize="20sp"
+              app:layout_constraintTop_toBottomOf="@id/tripImage"
+              android:gravity="center"
+              android:id="@+id/tripNameValue"
+              android:layout_marginTop="70dp"
+              app:layout_constraintStart_toStartOf="@+id/guideline1"
+              app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <TextView android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              tools:text="Enjoy your Stay in london"
+              android:textSize="20sp"
+              app:layout_constraintTop_toTopOf="@+id/tripNameValue"
+              android:gravity="center"
+              android:layout_marginTop="70dp"
+              android:id="@+id/tripDescriptionValue"
+              app:layout_constraintStart_toStartOf="@+id/guideline1"
+              app:layout_constraintEnd_toEndOf="parent"
+    />
+
+
+    <TextView android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              tools:text="Offer Letter"
+              android:textSize="20sp"
+              android:id="@+id/tripInviteLetter"
+              app:layout_constraintTop_toTopOf="@+id/tripDescriptionValue"
+              android:gravity="center"
+              android:layout_marginTop="70dp"
+              app:layout_constraintStart_toStartOf="@+id/guideline1"
+              app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <TextView android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              tools:text="1000"
+              android:textSize="20sp"
+              android:id="@+id/tripCostValue"
+              app:layout_constraintTop_toTopOf="@id/tripInviteLetter"
+              android:gravity="center"
+              android:layout_marginTop="70dp"
+              app:layout_constraintStart_toStartOf="@+id/guideline1"
+              app:layout_constraintEnd_toEndOf="parent"
+    />
+
+</android.support.constraint.ConstraintLayout>
